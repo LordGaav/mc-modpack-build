@@ -6,6 +6,7 @@ CONFIGDIR=/path/to/config/files/
 MODSDIR=/path/to/mods/files/
 RESOURCEPACKDIR=/path/to/resource/packs/
 MULTIMCTEMPLATEDIR=/path/to/your/template/files/
+SERVERLIBDIR=/path/to/forge/server/libraries/
 OUTPUTDIR=/path/to/output/dir/
 TMPDIR=$(mktemp -d MCBUILDXXXX)
 TMPDIRCLEAN=1

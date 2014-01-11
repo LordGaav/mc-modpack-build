@@ -46,6 +46,7 @@ MPROOT="$TMPDIR/forge"
 
 mkdir -v "$MPROOT"
 mkdir -v "$MPROOT/config"
+mkdir -v "$MPROOT/libraries"
 mkdir -v "$MPROOT/mods"
 
 echo "Copying files..."
@@ -53,6 +54,7 @@ echo "Copying files..."
 cp $FORGESERVERJAR "$MPROOT/"
 cp $MINECRAFTSERVERJAR "$MPROOT/"
 cp -r $CONFIGDIR/* "$MPROOT/config/"
+cp -r $SERVERLIBDIR/* "$MPROOT/libraries/"
 cp -r $MODSDIR/* "$MPROOT/mods/"
 
 echo "Creating ServerStart.sh..."
