@@ -14,3 +14,6 @@ TMPDIRCLEAN=1
 # File locaties
 FORGESERVERJAR=/path/to/forge-server.jar
 MINECRAFTSERVERJAR=/path/to/minecraft-server.jar
+
+# Mods to filter from the server package. Will use words separated by spaces as a filter.
+SERVEREXCLUDEMODS="Zan"

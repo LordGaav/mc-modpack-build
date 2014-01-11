@@ -57,6 +57,14 @@ cp -r $CONFIGDIR/* "$MPROOT/config/"
 cp -r $SERVERLIBDIR/* "$MPROOT/libraries/"
 cp -r $MODSDIR/* "$MPROOT/mods/"
 
+if [ "x$SERVEREXCLUDEMODS" != "x" ]; then
+	echo "Removing filtered server mods..."
+
+	for i in $SERVEREXCLUDEMODS; do
+		find "$MPROOT/mods" -iname "*$i*" -delete
+	done
+fi
+
 echo "Creating ServerStart.sh..."
 (
 cat <<EOF
